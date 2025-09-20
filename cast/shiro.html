@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>しろ - キャスト | 待合室藍愛</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Serif+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/cast-profile.css">
+</head>
+<body class="cast-profile-page">
+    <!-- パーティクル背景 -->
+    <div id="particles-container">
+        <canvas id="particles-canvas"></canvas>
+    </div>
+
+    <!-- ナビゲーションヘッダー -->
+    <nav class="cast-nav">
+        <div class="cast-nav-content">
+            <a href="../index.html" class="back-to-main">
+                <i class="fas fa-arrow-left"></i>
+                <span>メインページへ戻る</span>
+            </a>
+            <div class="cast-nav-title">待合室藍愛</div>
+        </div>
+    </nav>
+
+    <!-- メインコンテンツ -->
+    <main class="cast-main-content">
+        <!-- プロフィールセクション -->
+        <section class="cast-profile-section">
+            <!-- ギャラリー -->
+            <div class="cast-gallery">
+                <div class="gallery-container">
+                    <div class="gallery-slide active">
+                        <div class="gallery-placeholder">
+                            <!--<i class="fas fa-image"></i>-->
+                            <img src="C:\Users\zirco\Pictures\c96ef401698c0169.png">
+                            <!--<p>しろ メイン写真</p>-->
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <div class="gallery-placeholder">
+                            <!--<i class="fas fa-image"></i>-->
+                            <img src="C:\Users\zirco\Pictures\VRChat_2025-09-13_11-33-28.681_2.png">
+                            <!--<p>しろ サブ１</p>-->
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <div class="gallery-placeholder">
+                            <!--<i class="fas fa-image"></i>-->
+                            <img src="C:\Users\zirco\Pictures\VRChat_2025-09-16_20-02-39.585_1080x1920.png">
+                            <!--<p>しろ サブ２</p>-->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-controls">
+                    <div class="gallery-nav">
+                        <button class="gallery-btn gallery-prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="gallery-btn gallery-next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="gallery-indicators">
+                        <div class="gallery-dot active"></div>
+                        <div class="gallery-dot"></div>
+                        <div class="gallery-dot"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- プロフィール情報 -->
+            <div class="cast-profile-info">
+                <div class="cast-profile-content">
+                    <h1 class="cast-name-large">しろ</h1>
+                    <p class="cast-role-large">キャスト</p>
+                    
+                    <div class="profile-field" data-field="name">
+                        <div class="profile-label">
+                            <!--<i class="fas fa-signature"></i>-->
+                            名前
+                        </div>
+                        <div class="profile-value">しろ</div>
+                    </div>
+                    
+                    <div class="profile-field" data-field="attribute">
+                        <div class="profile-label">
+                            <!--<i class="fas fa-star"></i>-->
+                            属性
+                        </div>
+                        <div class="profile-value">会社の後輩</div>
+                    </div>
+                    
+                                        
+                    <div class="profile-field" data-field="attribute">
+                        <div class="profile-label">
+                            <!--<i class="fas fa-star"></i>-->
+                            趣味
+                        </div>
+                        <div class="profile-value"></div>
+                    </div>
+                    
+                    <div class="profile-field" data-field="attribute">
+                        <div class="profile-label">
+                            <!--<i class="fas fa-star"></i>-->
+                            お店からのコメント
+                        </div>
+                        <div class="profile-value"></div>
+                    </div>
+
+                    <div class="profile-field" data-field="comment">
+                        <div class="profile-label">
+                            <!--<i class="fas fa-heart"></i>-->
+                            ひとこと
+                        </div>
+                        <div class="profile-value">ひとこと</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 他キャスト一覧 -->
+        <section class="other-cast-section">
+            <h2 class="other-cast-title">Other Cast Members</h2>
+            <div class="other-cast-grid">
+                <a href="chinatsu.html" class="other-cast-item">
+                    <div class="other-cast-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="other-cast-name">ちなつ</div>
+                    <div class="other-cast-role">キャスト</div>
+                </a>
+                
+                <a href="nichimaru.html" class="other-cast-item">
+                    <div class="other-cast-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="other-cast-name">にちまる</div>
+                    <div class="other-cast-role">キャスト</div>
+                </a>
+                
+                <a href="nito.html" class="other-cast-item">
+                    <div class="other-cast-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="other-cast-name">にと</div>
+                    <div class="other-cast-role">キャスト</div>
+                </a>
+                
+                <a href="hana.html" class="other-cast-item">
+                    <div class="other-cast-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="other-cast-name">はな</div>
+                    <div class="other-cast-role">キャスト</div>
+                </a>
+                
+                <!--
+                <a href="furil.html" class="other-cast-item">
+                    <div class="other-cast-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="other-cast-name">ふりる</div>
+                    <div class="other-cast-role">キャスト</div>
+                </a>
+                -->
+                
+                <a href="rarucha.html" class="other-cast-item">
+                    <div class="other-cast-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="other-cast-name">らるちゃ</div>
+                    <div class="other-cast-role">キャスト</div>
+                </a>
+                
+                <a href="ruu.html" class="other-cast-item">
+                    <div class="other-cast-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="other-cast-name">るう</div>
+                    <div class="other-cast-role">キャスト</div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="../js/particles.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="../js/cast-profile.js"></script>
+</body>
+</html>

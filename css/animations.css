@@ -1,0 +1,382 @@
+/* ==========================================================================
+   アニメーション専用CSS
+   ========================================================================== */
+
+/* ページ読み込み時のアニメーション */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ホバー時の魔法的なエフェクト */
+@keyframes magicSparkle {
+    0%, 100% {
+        opacity: 0;
+        transform: scale(0) rotate(0deg);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1) rotate(180deg);
+    }
+}
+
+@keyframes floatingOrb {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+        opacity: 0.7;
+    }
+    33% {
+        transform: translateY(-20px) rotate(120deg);
+        opacity: 1;
+    }
+    66% {
+        transform: translateY(10px) rotate(240deg);
+        opacity: 0.8;
+    }
+}
+
+/* ネオンエフェクトのアニメーション */
+@keyframes neonFlicker {
+    0%, 100% {
+        text-shadow: 
+            0 0 5px var(--neon-pink),
+            0 0 10px var(--neon-pink),
+            0 0 15px var(--neon-pink);
+    }
+    50% {
+        text-shadow: 
+            0 0 2px var(--neon-pink),
+            0 0 5px var(--neon-pink),
+            0 0 8px var(--neon-pink);
+    }
+}
+
+@keyframes neonBorderFlicker {
+    0%, 100% {
+        box-shadow: 
+            0 0 10px var(--neon-pink-glow),
+            inset 0 0 10px rgba(255, 20, 147, 0.1);
+    }
+    50% {
+        box-shadow: 
+            0 0 20px var(--neon-pink-glow),
+            0 0 30px rgba(255, 20, 147, 0.5),
+            inset 0 0 20px rgba(255, 20, 147, 0.2);
+    }
+}
+
+/* パーティクルエフェクト */
+@keyframes particleFloat {
+    0% {
+        transform: translateY(100vh) translateX(-10px) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px) translateX(10px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes particleGlow {
+    0%, 100% {
+        box-shadow: 0 0 5px var(--neon-pink-glow);
+    }
+    50% {
+        box-shadow: 0 0 15px var(--neon-pink-glow), 0 0 25px rgba(255, 20, 147, 0.5);
+    }
+}
+
+/* 背景グラデーションの動き */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* テキストタイプライター効果 */
+@keyframes typewriter {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blinkCursor {
+    0%, 50% {
+        border-color: transparent;
+    }
+    51%, 100% {
+        border-color: var(--neon-pink);
+    }
+}
+
+/* エレガントなホバーエフェクト */
+@keyframes elegantHover {
+    0% {
+        transform: translateY(0) scale(1);
+        filter: brightness(1);
+    }
+    100% {
+        transform: translateY(-5px) scale(1.02);
+        filter: brightness(1.1);
+    }
+}
+
+/* 魔法陣風の回転エフェクト */
+@keyframes magicCircle {
+    0% {
+        transform: rotate(0deg) scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: rotate(180deg) scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+        opacity: 0.5;
+    }
+}
+
+/* 星座風のアニメーション */
+@keyframes constellation {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    25% {
+        opacity: 0.7;
+        transform: scale(1.1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    75% {
+        opacity: 0.7;
+        transform: scale(1.1);
+    }
+}
+
+/* ウェーブエフェクト */
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* 光の軌跡エフェクト */
+@keyframes lightTrail {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100vw);
+        opacity: 0;
+    }
+}
+
+/* クラス定義 */
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in-left {
+    animation: fadeInLeft 0.8s ease-out forwards;
+}
+
+.animate-fade-in-right {
+    animation: fadeInRight 0.8s ease-out forwards;
+}
+
+.animate-fade-in-scale {
+    animation: fadeInScale 0.8s ease-out forwards;
+}
+
+.animate-delay-1 { animation-delay: 0.1s; }
+.animate-delay-2 { animation-delay: 0.2s; }
+.animate-delay-3 { animation-delay: 0.3s; }
+.animate-delay-4 { animation-delay: 0.4s; }
+.animate-delay-5 { animation-delay: 0.5s; }
+
+.neon-flicker {
+    animation: neonFlicker 2s ease-in-out infinite;
+}
+
+.floating-orb {
+    animation: floatingOrb 6s ease-in-out infinite;
+}
+
+.magic-sparkle {
+    animation: magicSparkle 1.5s ease-in-out infinite;
+}
+
+.elegant-hover {
+    transition: all 0.3s ease;
+}
+
+.elegant-hover:hover {
+    animation: elegantHover 0.3s ease forwards;
+}
+
+/* スクロール時のアニメーション用クラス */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.scroll-animate.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-animate.animate-left {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scroll-animate.animate-right {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scroll-animate.animate-scale {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* パララックス効果用 */
+.parallax-element {
+    will-change: transform;
+    transition: transform 0.1s ease-out;
+}
+
+/* 特殊エフェクト用の疑似要素 */
+.magic-effect::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, var(--neon-pink-glow) 0%, transparent 70%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.magic-effect:hover::before {
+    width: 200px;
+    height: 200px;
+    opacity: 0.3;
+}
+
+/* カスタムカーソル効果 */
+.cursor-magic {
+    cursor: none;
+}
+
+.cursor-magic::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: var(--neon-pink);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: difference;
+    transition: transform 0.1s ease;
+}
+
+/* モバイル対応のアニメーション調整 */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .animate-fade-in-up,
+    .animate-fade-in-left,
+    .animate-fade-in-right,
+    .animate-fade-in-scale {
+        animation-duration: 0.6s;
+    }
+    
+    .scroll-animate {
+        transform: translateY(20px);
+    }
+    
+    .magic-effect::before {
+        width: 100px;
+        height: 100px;
+    }
+}

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>待合室藍愛 | 君と私の交わることのない一夜の物語</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Serif+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- 背景パーティクル -->
+    <div id="particles-container">
+        <canvas id="particles-canvas"></canvas>
+    </div>
+
+    <!-- メインヘッダー -->
+    <header class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <!-- 装飾フレーム -->
+            <div class="decorative-frame">
+                <div class="frame-corner top-left"></div>
+                <div class="frame-corner top-right"></div>
+                <div class="frame-corner bottom-left"></div>
+                <div class="frame-corner bottom-right"></div>
+                
+                <!-- タイトル部分 -->
+                <div class="title-section">
+                    <div class="ornament-top">
+                        <!--<i class="fas fa-gem"></i>-->
+                        <div class="ornament-line"></div>
+                        <!--<i class="fas fa-gem"></i>-->
+                    </div>
+                    
+                    <h1 class="main-title">
+                        <span class="title-glow">待合室藍愛</span>
+                    </h1>
+                    
+                    <div class="subtitle-container">
+                        <div class="subtitle-ornament left">◆</div>
+                        <h2 class="subtitle">君と私の交わることのない一夜の物語</h2>
+                        <div class="subtitle-ornament right">◆</div>
+                    </div>
+                    
+                    <div class="ornament-bottom">
+                        <!--<i class="fas fa-star"></i>-->
+                        <div class="ornament-line"></div>
+                        <!--<i class="fas fa-star"></i>-->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- スクロール指示 -->
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- イベント詳細 -->
+    <main>
+        <section class="event-details">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Event Details</h2>
+                    <div class="section-underline"></div>
+                </div>
+                
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h3>開催日時</h3>
+                            <p>月1～2回の不定期営業</p>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h3>場所</h3>
+                            <p>VRChat World</p>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fab fa-x"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h3>公式X</h3>
+                            <p><a href="https://x.com/VRC_Aiai" target="_blank" rel="noopener noreferrer">@VRC_Aiai</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h3>イベントタイプ</h3>
+                            <p>1対1イチャイチャ接客 RPイベント</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- キャスト紹介 -->
+        <section class="cast-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Cast</h2>
+                    <div class="section-underline"></div>
+                </div>
+                
+                <div class="cast-grid">
+                    <a href="cast/shiro.html" class="cast-card-link">
+                        <div class="cast-card">
+                            <div class="cast-image-container">
+                                <div class="cast-placeholder">
+                                    <i class="fas fa-user"></i>
+                                    <img src="C:\Users\zirco\Pictures\c96ef401698c0169.png">
+                                    <p>Cast Photo</p>
+                                </div>
+                                <div class="cast-overlay"></div>
+                            </div>
+                            <div class="cast-info">
+                                <h3 class="cast-name">しろ</h3>
+                                <p class="cast-role">キャスト</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="cast/chinatsu.html" class="cast-card-link">
+                        <div class="cast-card">
+                            <div class="cast-image-container">
+                                <div class="cast-placeholder">
+                                    <i class="fas fa-user"></i>
+                                    <img src="C:\Users\zirco\Pictures\21c1af40374fd079.png">
+                                    <p>Cast Photo</p>
+                                </div>
+                                <div class="cast-overlay"></div>
+                            </div>
+                            <div class="cast-info">
+                                <h3 class="cast-name">ちなつ</h3>
+                                <p class="cast-role">キャスト</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="cast/nichimaru.html" class="cast-card-link">
+                        <div class="cast-card">
+                            <div class="cast-image-container">
+                                <div class="cast-placeholder">
+                                    <i class="fas fa-user"></i>
+                                    <img src="C:\Users\zirco\Pictures\8a186ba7ccfed08c.png">
+                                    <p>Cast Photo</p>
+                                </div>
+                                <div class="cast-overlay"></div>
+                            </div>
+                            <div class="cast-info">
+                                <h3 class="cast-name">にちまる</h3>
+                                <p class="cast-role">キャスト</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="cast/nito.html" class="cast-card-link">
+                        <div class="cast-card">
+                            <div class="cast-image-container">
+                                <div class="cast-placeholder">
+                                    <i class="fas fa-user"></i>
+                                    <img src="C:\Users\zirco\Pictures\2.png">
+                                    <p>Cast Photo</p>
+                                </div>
+                                <div class="cast-overlay"></div>
+                            </div>
+                            <div class="cast-info">
+                                <h3 class="cast-name">にこ</h3>
+                                <p class="cast-role">キャスト</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="cast/hana.html" class="cast-card-link">
+                        <div class="cast-card">
+                            <div class="cast-image-container">
+                                <div class="cast-placeholder">
+                                    <i class="fas fa-user"></i>
+                                    <img src="C:\Users\zirco\Pictures\HANA.png">
+                                    <p>Cast Photo</p>
+                                </div>
+                                <div class="cast-overlay"></div>
+                            </div>
+                            <div class="cast-info">
+                                <h3 class="cast-name">はな</h3>
+                                <p class="cast-role">キャスト</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="cast/rarucha.html" class="cast-card-link">
+                        <div class="cast-card">
+                            <div class="cast-image-container">
+                                <div class="cast-placeholder">
+                                    <i class="fas fa-user"></i>
+                                    <img src="C:\Users\zirco\Pictures\1.png">
+                                    <p>Cast Photo</p>
+                                </div>
+                                <div class="cast-overlay"></div>
+                            </div>
+                            <div class="cast-info">
+                                <h3 class="cast-name">らるちゃ</h3>
+                                <p class="cast-role">キャスト</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="cast/ruu.html" class="cast-card-link">
+                        <div class="cast-card">
+                            <div class="cast-image-container">
+                                <div class="cast-placeholder">
+                                    <i class="fas fa-user"></i>
+                                    <img src="C:\Users\zirco\Pictures\a06aaf57d97d8877.png">
+                                    <p>Cast Photo</p>
+                                </div>
+                                <div class="cast-overlay"></div>
+                            </div>
+                            <div class="cast-info">
+                                <h3 class="cast-name">るう</h3>
+                                <p class="cast-role">キャスト</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- アバウトセクション -->
+        <section class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About</h2>
+                    <div class="section-underline"></div>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>「待合室 藍愛」は、大人のお店の“待合室”を舞台としたコンセプトイベントです。</p>
+                        <p>同級生、友人の妹、元先生など、意外な関係のキャストとの甘い時間を提供します。</p>
+                        <p>心に残る特別な時間をあなたへ。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-title">待合室藍愛</div>
+                <div class="footer-links">
+                    <a href="https://x.com/VRC_Aiai" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-x-twitter"></i> 公式X
+                    </a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 待合室藍愛. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/particles.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
